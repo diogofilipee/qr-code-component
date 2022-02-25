@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light dark;
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --shadow: hsl(218, 25%, 75%);
+  --white: #fff;
+  --font-family-sans-serif: 'Outfit', -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-gray, hsl(212, 45%, 89%));
+  display: grid;
+  font-family: var(--font-family-sans-serif, 'Outfit', -apple-system, sans-serif);
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  padding: 1.5rem;
+  place-items: center;
+  text-rendering: optimizeSpeed;
+}
+
+.card {
+  background-color: var(--white, #fff);
+  border-radius: 1.25rem;
+  box-shadow: 0 .25rem 2.5rem var(--shadow);
+  max-width: 395px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.card__img {
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card__heading {
+  color: var(--dark-blue, hsl(218, 44%, 22%));
+  font-size: 1.75rem;
+}
+
+.card__text {
+  color: var(--grayish-blue, hsl(220, 15%, 55%));
+  font-size: 1.25rem;
+}
